@@ -1,4 +1,3 @@
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png";
 import data from "../data/portfolioData.json";
@@ -6,24 +5,6 @@ import data from "../data/portfolioData.json";
 const { skills } = data;
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
 
   return (
     <section className="skill" id="skills">
@@ -33,7 +14,7 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>{skills.heading}</h2>
                         <p>{skills.subtitle.split('\n').map((line, i) => <span key={i}>{line}{i === 0 && <br/>}</span>)}</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <div className="skills-grid">
                             {skills.items.map((skill, index) => (
                               <div className="item" key={index}>
                                 <div className="skill-icon-circle">
@@ -55,7 +36,7 @@ export const Skills = () => {
                                 <span className="skill-level">{skill.level}%</span>
                               </div>
                             ))}
-                        </Carousel>
+                        </div>
                     </div>
                 </div>
             </div>

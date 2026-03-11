@@ -1,52 +1,123 @@
 {
   "meta": {
-    "title": "Lương Thế Vinh — Technical Lead | Portfolio",
-    "description": "Lương Thế Vinh — Technical Lead với 15 năm kinh nghiệm trong Viễn thông, Ngân hàng và An ninh quốc gia. Chuyên gia Legacy Migration, AI Agentic Coding.",
+    "title": "Lương Thế Vinh — Software Engineer | Portfolio",
+    "description": "Lương Thế Vinh — Software Engineer với 15 năm kinh nghiệm trong Viễn thông, Ecommerce và Tích hợp hệ thống. Chuyên gia Legacy Migration, AI Agentic Coding.",
     "themeColor": "#0a0a1a"
   },
-
   "personal": {
     "name": "Lương Thế Vinh",
     "tagline": "15+ Năm Kinh Nghiệm Thực Chiến",
-    "rotatingTitles": ["Technical Lead", "System Architect", "AI Pioneer", "Legacy Migrator"],
-    "summary": "Sở hữu nền tảng vững chắc về hệ thống <strong>Viễn thông</strong>, <strong>Ngân hàng</strong> và <strong>An ninh quốc gia</strong>. Chuyên gia di trú hệ thống Legacy sang Microservices. Tiên phong xây dựng và vận hành <strong>AI Agentic Coding Team</strong>, tối ưu 50% hiệu suất phát triển phần mềm.",
+    "rotatingTitles": [
+      "Software Engineer",
+      "System Architect",
+      "Team Leader"
+    ],
+    "summary": "Sở hữu nền tảng vững chắc về hệ thống <strong>Viễn thông</strong>, <strong>Ecommerce</strong> và <strong>Tích hợp hệ thống</strong>. Chuyên gia chuyển đổi hệ thống Legacy sang Microservices. Tiên phong xây dựng và vận hành <strong>AI Agentic Coding Team</strong>, tối ưu hiệu suất phát triển phần mềm.",
     "connectButton": "Kết Nối Ngay"
   },
-
-  "socials": {
-    "linkedin": "https://linkedin.com/",
-    "github": "https://github.com/"
-  },
-
   "nav": {
     "links": [
-      { "id": "home", "label": "Trang Chủ", "href": "#home" },
-      { "id": "skills", "label": "Kỹ Năng", "href": "#skills" },
-      { "id": "experience", "label": "Kinh Nghiệm", "href": "#experience" },
-      { "id": "projects", "label": "Dự Án", "href": "#projects" }
+      {
+        "id": "home",
+        "label": "Trang Chủ",
+        "href": "#home"
+      },
+      {
+        "id": "skills",
+        "label": "Kỹ Năng",
+        "href": "#skills"
+      },
+      {
+        "id": "experience",
+        "label": "Kinh Nghiệm",
+        "href": "#experience"
+      },
+      {
+        "id": "projects",
+        "label": "Dự Án",
+        "href": "#projects"
+      }
     ],
     "connectButton": "Liên Hệ"
   },
-
   "skills": {
     "heading": "Kỹ Năng Cốt Lõi",
-    "subtitle": "Backend · Frontend · Database · Mobile · AI & DevOps · Architecture\n15 năm xây dựng và tối ưu hệ thống từ Viễn thông, Ngân hàng đến An ninh quốc gia.",
+    "subtitle": "Backend · Frontend · Database · Mobile · AI & DevOps · Architecture\n15 năm xây dựng và tối ưu hệ thống từ Viễn thông, Ecommerce đến Tích hợp hệ thống.",
     "items": [
-      { "name": ".NET Core", "level": 92, "icon": "🔷", "group": "Backend" },
-      { "name": "Java / Spring Boot", "level": 90, "icon": "☕", "group": "Backend" },
-      { "name": "Node.js", "level": 82, "icon": "🟩", "group": "Backend" },
-      { "name": "Next.js / React", "level": 85, "icon": "⚛️", "group": "Frontend" },
-      { "name": "Angular (v2-18)", "level": 80, "icon": "🔺", "group": "Frontend" },
-      { "name": "Oracle Deep Tuning", "level": 92, "icon": "🗃️", "group": "Database" },
-      { "name": "MongoDB / MySQL", "level": 85, "icon": "📊", "group": "Database" },
-      { "name": "React Native / Kotlin", "level": 78, "icon": "📱", "group": "Mobile" },
-      { "name": "AI Agentic (CrewAI)", "level": 88, "icon": "🤖", "group": "AI & DevOps" },
-      { "name": "Docker / Jenkins CI/CD", "level": 85, "icon": "🐳", "group": "AI & DevOps" },
-      { "name": "System Architecture", "level": 95, "icon": "🏗️", "group": "Architecture" },
-      { "name": "Team Leadership", "level": 93, "icon": "👥", "group": "Leadership" }
+      {
+        "name": ".NET Core",
+        "level": 92,
+        "icon": "🔷",
+        "group": "Backend"
+      },
+      {
+        "name": "Java / Spring Boot",
+        "level": 90,
+        "icon": "☕",
+        "group": "Backend"
+      },
+      {
+        "name": "Node.js",
+        "level": 82,
+        "icon": "🟩",
+        "group": "Backend"
+      },
+      {
+        "name": "Next.js / React",
+        "level": 85,
+        "icon": "⚛️",
+        "group": "Frontend"
+      },
+      {
+        "name": "Angular (v2-18)",
+        "level": 80,
+        "icon": "🔺",
+        "group": "Frontend"
+      },
+      {
+        "name": "Oracle Deep Tuning",
+        "level": 92,
+        "icon": "🗃️",
+        "group": "Database"
+      },
+      {
+        "name": "MongoDB / MySQL",
+        "level": 85,
+        "icon": "📊",
+        "group": "Database"
+      },
+      {
+        "name": "React Native / Kotlin",
+        "level": 78,
+        "icon": "📱",
+        "group": "Mobile"
+      },
+      {
+        "name": "AI Agentic (CrewAI)",
+        "level": 88,
+        "icon": "🤖",
+        "group": "AI & DevOps"
+      },
+      {
+        "name": "Docker / Jenkins CI/CD",
+        "level": 85,
+        "icon": "🐳",
+        "group": "AI & DevOps"
+      },
+      {
+        "name": "System Architecture",
+        "level": 95,
+        "icon": "🏗️",
+        "group": "Architecture"
+      },
+      {
+        "name": "Team Leadership",
+        "level": 93,
+        "icon": "👥",
+        "group": "Leadership"
+      }
     ]
   },
-
   "experience": {
     "heading": "Hành Trình 15 Năm",
     "subtitle": "Từ Developer tại VNPT → Team Leader → Technical Lead & AI Pioneer",
@@ -83,21 +154,47 @@
             "year": "2022 – Nay",
             "role": "BA / Dev / Ops",
             "detail": "Tích hợp hệ thống VisionBox (Bồ Đào Nha) vào hạ tầng an ninh Việt Nam. Làm việc trực tiếp với chuyên gia nước ngoài, thiết kế giải pháp bảo mật trong mạng nội bộ cách ly.",
-            "tech": "Java · NiFi · EDIFACT · .NET · Linux"
+            "tech": "Java · NiFi · EDIFACT · .NET · Linux",
+            "links": [
+              {
+                "label": "VnExpress",
+                "url": "https://vnexpress.net/hanh-khach-giam-thoi-gian-xuat-nhap-canh-bang-cong-kiem-soat-tu-dong-4647665.html"
+              }
+            ]
           },
           {
             "project": "EVN Hà Nội Modernization",
             "year": "2022 – 2025",
             "role": "PM / Tech Lead",
             "detail": "Chuyển đổi hệ thống Legacy sang Microservices (.NET Core, Oracle GoldenGate). Phát triển ứng dụng Mobile (React Native) cho Android/iOS.",
-            "tech": ".NET Core · Oracle GoldenGate · React Native"
+            "tech": ".NET Core · Oracle GoldenGate · React Native",
+            "links": [
+              {
+                "label": "Website",
+                "url": "https://evnhanoi.vn/"
+              },
+              {
+                "label": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=cskh.evnhanoi"
+              },
+              {
+                "label": "App Store",
+                "url": "https://apps.apple.com/us/app/evnhanoi-%C4%91i%E1%BB%87n-l%E1%BB%B1c-h%C3%A0-n%E1%BB%99i/id1195739399"
+              }
+            ]
           },
           {
             "project": "Homefarm MiniApp",
             "year": "2023 – Nay",
             "role": "Tech Lead / DevOps",
             "detail": "Tích hợp đa sàn (Zalo, TikTok, Shopee, Grab) vào hệ thống Microservices.",
-            "tech": "Java · Docker · Microservices · Multi-platform"
+            "tech": "Java · Docker · Microservices · Multi-platform",
+            "links": [
+              {
+                "label": "Zalo Mini App",
+                "url": "https://miniapp.zaloplatforms.com/apps/2318306526162317296"
+              }
+            ]
           },
           {
             "project": "An ninh Mobile POC",
@@ -161,21 +258,35 @@
       }
     ]
   },
-
   "projects": {
     "heading": "Dự Án Tiêu Biểu",
-    "subtitle": "Một số dự án nổi bật trong suốt 15 năm sự nghiệp — An ninh quốc gia, Ecommerce & AI, Viễn thông & Chuyển đổi số.",
+    "subtitle": "Một số dự án nổi bật trong suốt 15 năm sự nghiệp — Tích hợp hệ thống, Ecommerce & AI, Viễn thông & Chuyển đổi số.",
     "tabs": [
-      { "key": "first", "label": "An Ninh & Banking" },
-      { "key": "second", "label": "Ecommerce & AI" },
-      { "key": "third", "label": "Viễn Thông & CĐS" }
+      {
+        "key": "first",
+        "label": "An Ninh & Banking"
+      },
+      {
+        "key": "second",
+        "label": "Ecommerce & AI"
+      },
+      {
+        "key": "third",
+        "label": "Viễn Thông & CĐS"
+      }
     ],
     "items": {
       "first": [
         {
-          "title": "Autogate – An Ninh Quốc Gia",
+          "title": "Autogate – Tích hợp hệ thống",
           "description": "Tích hợp VisionBox (Bồ Đào Nha) vào hạ tầng an ninh cảng hàng không VN. EDIFACT, PAXLST/PNRGOV.",
-          "imgKey": "projImg1"
+          "imgKey": "projImg1",
+          "links": [
+            {
+              "label": "VnExpress",
+              "url": "https://vnexpress.net/hanh-khach-giam-thoi-gian-xuat-nhap-canh-bang-cong-kiem-soat-tu-dong-4647665.html"
+            }
+          ]
         },
         {
           "title": "Amadeus Integration",
@@ -184,7 +295,7 @@
         },
         {
           "title": "An ninh Mobile POC",
-          "description": "Ứng dụng chạy ngầm Android (Kotlin, WebRTC) phục vụ công tác an ninh quốc gia.",
+          "description": "Ứng dụng chạy ngầm Android (Kotlin, WebRTC) phục vụ công tác Tích hợp hệ thống.",
           "imgKey": "projImg3"
         }
       ],
@@ -192,7 +303,9 @@
         {
           "title": "Homefarm MiniApp & Omnichannel",
           "description": "Tích hợp đa sàn (Zalo, TikTok, Shopee, Grab) vào hệ thống Microservices. Pricing Engine V3.",
-          "imgKey": "projImg2"
+          "imgKey": "projImg2",
+          "imgUrl": "https://photo-logo-mapps.zadn.vn/ffb7c0b864fd8da3d4ec.jpg",
+          "link": "https://miniapp.zaloplatforms.com/apps/2318306526162317296"
         },
         {
           "title": "AI Agentic & Web Builder",
@@ -209,7 +322,22 @@
         {
           "title": "EVN Hà Nội Modernization",
           "description": "Chuyển đổi Legacy .NET → Microservices .NET Core, Oracle GoldenGate. Mobile React Native.",
-          "imgKey": "projImg3"
+          "imgKey": "projImg3",
+          "imgUrl": "https://img.upanh.tv/2026/03/11/Screenshot-2026-03-11-t-23.53.51.png",
+          "links": [
+            {
+              "label": "Website",
+              "url": "https://evnhanoi.vn/"
+            },
+            {
+              "label": "Google Play",
+              "url": "https://play.google.com/store/apps/details?id=cskh.evnhanoi"
+            },
+            {
+              "label": "App Store",
+              "url": "https://apps.apple.com/us/app/evnhanoi-%C4%91i%E1%BB%87n-l%E1%BB%B1c-h%C3%A0-n%E1%BB%99i/id1195739399"
+            }
+          ]
         },
         {
           "title": "VNPT Core – Mobile & Desktop",
@@ -224,21 +352,19 @@
       ]
     }
   },
-
   "contact": {
     "heading": "Liên Hệ Với Tôi",
     "buttonText": "Gửi",
-    "email": "vinhlt@example.com",
+    "email": "vinhlt@vnpt.vn",
     "placeholders": {
       "firstName": "Họ",
       "lastName": "Tên",
       "email": "Email",
-      "phone": "Số điện thoại",
+      "phone": "0944870666",
       "message": "Tin nhắn"
     }
   },
-
   "footer": {
-    "copyright": "© 2026 Lương Thế Vinh — Technical Lead"
+    "copyright": "© 2026 Lương Thế Vinh — Software Engineer"
   }
 }

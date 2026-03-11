@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import headerImg from "../assets/img/profile-pic.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import data from "../data/portfolioData.json";
@@ -57,7 +56,6 @@ export const Banner = () => {
                 <span className="tagline">{personal.tagline}</span>
                 <h1>{`Xin chào!`} <br/>{`Tôi là `}<span className="highlight-name">{personal.name}</span> <br/><span className="txt-rotate" dataPeriod="1000" data-rotate={JSON.stringify(toRotate)}><span className="wrap">{text}</span></span></h1>
                   <p dangerouslySetInnerHTML={{ __html: personal.summary }} />
-                  <button onClick={() => document.getElementById('connect').scrollIntoView({behavior: 'smooth'})}>{personal.connectButton} <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
@@ -65,7 +63,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" className="profile-hero-img" />
                 </div>}
             </TrackVisibility>
           </Col>

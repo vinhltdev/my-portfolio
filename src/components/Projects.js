@@ -35,12 +35,14 @@ export const Projects = () => {
                       <Tab.Pane eventKey={tab.key} key={tab.key}>
                         <Row>
                           {(projects.items[tab.key] || []).map((project, index) => (
-                            <ProjectCard
-                              key={index}
-                              title={project.title}
-                              description={project.description}
-                              imgUrl={imgMap[project.imgKey] || projImg1}
-                            />
+                              <ProjectCard
+                                key={index}
+                                title={project.title}
+                                description={project.description}
+                                imgUrl={project.imgUrl ? project.imgUrl : (imgMap[project.imgKey] || projImg1)}
+                                link={project.link}
+                                links={project.links}
+                              />
                           ))}
                         </Row>
                       </Tab.Pane>

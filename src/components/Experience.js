@@ -1,10 +1,20 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { Globe, GooglePlay, Apple, Newspaper, ChatDotsFill } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import colorSharp from "../assets/img/color-sharp.png";
 import data from "../data/portfolioData.json";
 
 const { experience } = data;
+
+const getLinkIcon = (label, size=13) => {
+  if (label.includes('Website')) return <Globe size={size} style={{marginRight: '4px'}} />;
+  if (label.includes('Google Play')) return <GooglePlay size={size} style={{marginRight: '4px'}}/>;
+  if (label.includes('App Store')) return <Apple size={size} style={{marginRight: '4px', marginBottom: '2px'}}/>;
+  if (label.includes('VnExpress')) return <Newspaper size={size} style={{marginRight: '4px'}}/>;
+  if (label.includes('Zalo')) return <ChatDotsFill size={size} style={{marginRight: '4px'}}/>;
+  return <Globe size={size} style={{marginRight: '4px'}}/>;
+};
 
 export const Experience = () => {
   return (
@@ -43,6 +53,15 @@ export const Experience = () => {
                                     <span className="tech-tag" key={i} style={{borderColor: era.color}}>{tag}</span>
                                   ))}
                                 </div>
+                                {item.links && item.links.length > 0 && (
+                                  <div className="timeline-links" style={{ marginTop: '16px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                                    {item.links.map((link, i) => (
+                                      <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="proj-btn highlight-btn" style={{ fontSize: '11px', padding: '5px 12px' }}>
+                                        {getLinkIcon(link.label, 13)} {link.label}
+                                      </a>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
                             </div>
                           ))}
