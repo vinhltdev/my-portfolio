@@ -4,17 +4,28 @@ import { Container, Row, Col } from "react-bootstrap";
 export const Resume = () => {
   const [activePage, setActivePage] = useState(1);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+  const [lang, setLang] = useState('vi');
   const totalPages = 2;
 
-  const pages = [
-    { num: 1, src: `${process.env.PUBLIC_URL}/Luong_The_Vinh_CV_1.png` },
-    { num: 2, src: `${process.env.PUBLIC_URL}/Luong_The_Vinh_CV_2.png` },
-  ];
+  const getPages = () => {
+    return lang === 'en'
+      ? [
+          { num: 1, src: `${process.env.PUBLIC_URL}/Luong_The_Vinh_CV_1.png` },
+          { num: 2, src: `${process.env.PUBLIC_URL}/Luong_The_Vinh_CV_2.png` },
+        ]
+      : [
+          { num: 1, src: `${process.env.PUBLIC_URL}/Luong_The_Vinh_CV_vi_1.png` },
+          { num: 2, src: `${process.env.PUBLIC_URL}/Luong_The_Vinh_CV_vi_2.png` },
+        ];
+  };
+
+  const pages = getPages();
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = `${process.env.PUBLIC_URL}/Luong_The_Vinh_CV.pdf`;
-    link.download = "Luong_The_Vinh_CV.pdf";
+    const fileName = lang === 'en' ? "Luong_The_Vinh_CV.pdf" : "Luong_The_Vinh_CV_vi.pdf";
+    link.href = `${process.env.PUBLIC_URL}/${fileName}`;
+    link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -25,8 +36,26 @@ export const Resume = () => {
       <Container>
         <h2>Curriculum Vitae</h2>
         <p className="resume-subtitle">
-          ATS-friendly PDF resume — Preview online or download directly
+          {lang === 'vi' 
+            ? "Bản thiết kế chuẩn ATS — Xem trực tuyến hoặc tải về"
+            : "ATS-friendly PDF resume — Preview online or download directly"}
         </p>
+
+        {/* Language Toggle */}
+        <div className="resume-lang-toggle">
+          <button 
+            className={`lang-btn ${lang === 'vi' ? 'active' : ''}`} 
+            onClick={() => setLang('vi')}
+          >
+            Tiếng Việt
+          </button>
+          <button 
+            className={`lang-btn ${lang === 'en' ? 'active' : ''}`} 
+            onClick={() => setLang('en')}
+          >
+            English
+          </button>
+        </div>
 
         {/* Action Buttons */}
         <div className="resume-actions">
@@ -39,7 +68,7 @@ export const Resume = () => {
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
               <circle cx="12" cy="12" r="3"/>
             </svg>
-            {isPreviewOpen ? "Ẩn Preview" : "Preview CV"}
+            {isPreviewOpen ? (lang==='vi' ? "Đóng Preview" : "Close Preview") : (lang==='vi' ? "Xem CV" : "Preview CV")}
           </button>
           <button
             className="resume-btn resume-btn-download"
@@ -51,7 +80,7 @@ export const Resume = () => {
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            Tải CV (PDF)
+            {lang === 'vi' ? "Tải File (PDF)" : "Download (PDF)"}
           </button>
         </div>
 
@@ -66,7 +95,7 @@ export const Resume = () => {
                   className={`resume-page-dot ${activePage === page.num ? "active" : ""}`}
                   onClick={() => setActivePage(page.num)}
                 >
-                  Trang {page.num}
+                  {lang === 'vi' ? `Trang ${page.num}` : `Page ${page.num}`}
                 </button>
               ))}
               <span className="resume-page-indicator">
@@ -92,7 +121,7 @@ export const Resume = () => {
                       <polyline points="7 10 12 15 17 10"/>
                       <line x1="12" y1="15" x2="12" y2="3"/>
                     </svg>
-                    Download PDF
+                    {lang === 'vi' ? "Tải xuống" : "Download PDF"}
                   </button>
                 </div>
               </div>
@@ -121,7 +150,7 @@ export const Resume = () => {
               <Col xs={6} md={3}>
                 <div className="resume-feature">
                   <span className="resume-feature-icon">🌐</span>
-                  <span>2 Pages</span>
+                  <span>{lang==='vi' ? "2 Trang" : "2 Pages"}</span>
                 </div>
               </Col>
             </Row>
