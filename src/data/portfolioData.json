@@ -36,6 +36,11 @@
         "id": "projects",
         "label": "Dự Án",
         "href": "#projects"
+      },
+      {
+        "id": "resume",
+        "label": "CV",
+        "href": "#resume"
       }
     ],
     "connectButton": "Liên Hệ"
